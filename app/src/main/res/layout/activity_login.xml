@@ -21,32 +21,52 @@
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/loginrectan"
-        tools:layout_editor_absoluteX="51dp"
-        tools:layout_editor_absoluteY="236dp" />
+        android:layout_width="331dp"
+        android:layout_height="489dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="236dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="76dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.739"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.671"
+        app:srcCompat="@drawable/loginrectan" />
 
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/centromulticlinicovirolenotitulo"
-        tools:layout_editor_absoluteX="33dp"
-        tools:layout_editor_absoluteY="20dp" />
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="192dp"
+        android:layout_marginBottom="608dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/centromulticlinicovirolenotitulo" />
 
     <ImageView
         android:id="@+id/imageView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/bienvenidodenuevo"
-        tools:layout_editor_absoluteX="75dp"
-        tools:layout_editor_absoluteY="287dp" />
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="287dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="426dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bienvenidodenuevo" />
 
     <EditText
         android:id="@+id/editTextText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="212dp"
+        android:layout_height="51dp"
         android:layout_marginStart="100dp"
         android:layout_marginTop="352dp"
         android:layout_marginEnd="101dp"
@@ -61,8 +81,8 @@
 
     <EditText
         android:id="@+id/editTextTextPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="213dp"
+        android:layout_height="49dp"
         android:layout_marginStart="100dp"
         android:layout_marginTop="424dp"
         android:layout_marginEnd="101dp"
@@ -74,5 +94,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="513dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="134dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/botoninicio" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
