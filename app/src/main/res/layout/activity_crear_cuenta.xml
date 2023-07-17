@@ -13,10 +13,10 @@
       android:layout_height="526dp"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.224"
+      app:layout_constraintHorizontal_bias="0.395"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.002"
+      app:layout_constraintVertical_bias="0.0"
       app:srcCompat="@drawable/crearcuentaimagen" />
 
   <ImageView
@@ -25,10 +25,10 @@
       android:layout_height="450dp"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.506"
+      app:layout_constraintHorizontal_bias="0.47"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.802"
+      app:layout_constraintVertical_bias="0.807"
       app:srcCompat="@drawable/loginrectan" />
 
   <ImageView
@@ -37,19 +37,32 @@
       android:layout_height="wrap_content"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.501"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.365"
       app:srcCompat="@drawable/crearcuenta" />
+
+  <ImageButton
+      android:id="@+id/imageButton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="94dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="1.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.82"
+      app:srcCompat="@drawable/botonsiguiente" />
 
   <EditText
       android:id="@+id/editTextText2"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:layout_marginStart="115dp"
-      android:layout_marginTop="515dp"
-      android:layout_marginEnd="115dp"
-      android:layout_marginBottom="380dp"
+      android:layout_marginStart="99dp"
+      android:layout_marginTop="313dp"
+      android:layout_marginEnd="103dp"
+      android:layout_marginBottom="373dp"
       android:ems="10"
       android:inputType="text"
       android:text="Name"
@@ -62,10 +75,10 @@
       android:id="@+id/editTextTextPassword2"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:layout_marginStart="115dp"
-      android:layout_marginTop="638dp"
-      android:layout_marginEnd="115dp"
-      android:layout_marginBottom="257dp"
+      android:layout_marginStart="100dp"
+      android:layout_marginTop="448dp"
+      android:layout_marginEnd="101dp"
+      android:layout_marginBottom="238dp"
       android:ems="10"
       android:inputType="textPassword"
       app:layout_constraintBottom_toBottomOf="parent"
@@ -73,27 +86,14 @@
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent" />
 
-  <ImageButton
-      android:id="@+id/imageButton"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_marginEnd="94dp"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="1.0"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.823"
-      app:srcCompat="@drawable/botonsiguiente" />
-
   <EditText
       android:id="@+id/editTextTextEmailAddress"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:layout_marginStart="115dp"
-      android:layout_marginTop="573dp"
-      android:layout_marginEnd="115dp"
-      android:layout_marginBottom="322dp"
+      android:layout_marginStart="98dp"
+      android:layout_marginTop="381dp"
+      android:layout_marginEnd="103dp"
+      android:layout_marginBottom="305dp"
       android:ems="10"
       android:inputType="textEmailAddress"
       app:layout_constraintBottom_toBottomOf="parent"
