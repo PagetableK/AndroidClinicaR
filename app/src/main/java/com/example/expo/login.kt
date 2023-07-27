@@ -52,7 +52,7 @@ class login : AppCompatActivity() {
                 var RS2=statement?.executeQuery("select contraseña from tbPacientes")
 
 
-                if (RS.next()==Email && RS2==Contraseña){
+                if (RS.next()==Email && RS2=Contraseña){
 
                 }
                 else{
