@@ -63,7 +63,7 @@
         app:srcCompat="@drawable/bienvenidodenuevo" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/txtEmailPacientes"
         android:layout_width="212dp"
         android:layout_height="51dp"
         android:ems="10"
@@ -77,7 +77,7 @@
         app:layout_constraintVertical_bias="0.531" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/passPacientes"
         android:layout_width="213dp"
         android:layout_height="49dp"
         android:ems="10"
