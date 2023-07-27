@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/paginaPrincipal"
+    tools:context=".MainActivity">
+
+
+    <TableLayout
+        android:id="@+id/calendarTable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*">
+
+        <TableRow>
+            <TextView
+                android:text="Sun"
+                android:layout_column="0"
+                android:padding="5dp" />
+
+            <TextView
+                android:text="Mon"
+                android:layout_column="1"
+                android:padding="5dp" />
+
+            <TextView
+                android:text="Tue"
+                android:layout_column="2"
+                android:padding="5dp" />
+
+            <TextView
+                android:text="Wed"
+                android:layout_column="3"
+                android:padding="5dp" />
+
+            <TextView
+                android:text="Thu"
+                android:layout_column="4"
+                android:padding="5dp" />
+
+            <TextView
+                android:text="Fri"
+                android:layout_column="5"
+                android:padding="5dp" />
+
+            <TextView
+                android:text="Sat"
+                android:layout_column="6"
+                android:padding="5dp" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/day1"
+                android:layout_column="0"
+                android:padding="5dp" />
+
+            <TextView
+                android:id="@+id/day2"
+                android:layout_column="1"
+                android:padding="5dp" />
+
+            <TextView
+                android:id="@+id/day3"
+                android:layout_column="2"
+                android:padding="5dp" />
+
+            <TextView
+                android:id="@+id/day4"
+                android:layout_column="3"
+                android:padding="5dp" />
+
+            <TextView
+                android:id="@+id/day5"
+                android:layout_column="4"
+                android:padding="5dp" />
+
+            <TextView
+                android:id="@+id/day6"
+                android:layout_column="5"
+                android:padding="5dp" />
+
+            <TextView
+                android:id="@+id/day7"
+                android:layout_column="6"
+                android:padding="5dp" />
+        </TableRow>
+
+        <!-- Add more rows for the remaining weeks -->
+    </TableLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        android:background="@drawable/custom_edittext">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:drawablePadding="8dp"
+                android:hint="Nombre"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/cardview_dark_background" />
+
+            <EditText
+                android:id="@+id/clock"
+                android:layout_width="147dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:drawablePadding="8dp"
+                android:hint="Hora"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/cardview_dark_background" />
+
+            <EditText
+                android:id="@+id/age"
+                android:layout_width="147dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:drawablePadding="8dp"
+                android:hint="Edad"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/cardview_dark_background" />
+
+            <EditText
+                android:id="@+id/reason"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:drawablePadding="8dp"
+                android:hint="Motivo"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/cardview_dark_background" />
+
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/blue"
+                android:text="Login"
+                android:textSize="18sp"
+                app:cornerRadius="20dp" />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bottom_background"
+        app:menu="@menu/bottom_menu" />
+
+</LinearLayout>
