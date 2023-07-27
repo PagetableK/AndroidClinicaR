@@ -8,10 +8,10 @@ import java.sql.SQLException
 
 class Conexion {
 
-    private val ip = "192.168.200.105:54103"
+    private val ip = "192.168.1.9:55385"
     private val db = "Expo_S2"
-    private val username = "1234"
-    private val password = "1234"
+    private val username = "sa"
+    private val password = "Itr2023"
 
     fun dbConn(): Connection? {
         val policy = StrictMode.ThreadPolicy.Builder().permitAll().build()
