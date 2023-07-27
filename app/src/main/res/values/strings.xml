@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name" translatable="false">Expo</string>
+    <string name="title_activity_segunda_pantalla">SegundaPantalla</string>
 </resources>
