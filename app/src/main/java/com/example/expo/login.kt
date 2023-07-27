@@ -23,7 +23,7 @@ class login : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        private var connectSql = Conexion()
+        var connectSql = Conexion()
 
         RecuperarTexto = findViewById(R.id.txtRecuperar)
 
@@ -38,29 +38,42 @@ class login : AppCompatActivity() {
         PacienteContra=findViewById(R.id.passPacientes)
         PacienteLogin=findViewById(R.id.btnIngresar)
 
+        val Email= PacienteEmail.text.toString()
+        val Contraseña= PacienteContra.text.toString()
+
         PacienteLogin.setOnClickListener{
 
-
-
-            try {
-
-                val Email= PacienteEmail.text.toString()
-                val Contraseña= PacienteContra.text.toString()
-
-                val statement =connectSql.dbConn()?.createStatement()
-                var RS=statement?.executeQuery("select correo from tbPacientes")
-                var RS2=statement?.executeQuery("select contraseña from tbPacientes")
-
-
-                if (RS.next()==Email && RS2=Contraseña){
-
-                }
-                else{
-
-                }
-            }catch (ex: SQLException){
-                Toast.makeText(this, "Error al mostrar", Toast.LENGTH_SHORT).show()
+            if(PacienteEmail.text.toString().trim() == "" || PacienteContra.text.toString().trim() == "")
+            {
+                Toast.makeText(this, "Datos faltantes, Asegúrese de llenar todos los datos", Toast.LENGTH_SHORT).show()
             }
+            else {
+                try {
+                    val statement = connectSql.dbConn()?.createStatement()
+                    var RS =
+                        statement?.executeQuery("select idpaciente, nombre, correo, contraseña from tbPacientes where correo='${Email}' and contraseña'${Contraseña}'")
+                    var RS2 =
+                        statement?.executeQuery("select idpaciente, nombre, correo, contraseña from tbPacientes where correo='${Email}' and contraseña'${Contraseña}")
 
+                    if (RS?.next()==false) {
+                        Toast.makeText(this, "Email o contraseña inválidos", Toast.LENGTH_SHORT).show()
+                    } else {
+
+                        while (RS2?.next()==true){
+
+                            val a1 = RS2.getString("correo")
+                            val a2 = RS2.getString("contraseña")
+
+                            if (Email==a1 && Contraseña==a2){
+
+                            }
+
+                        }
+                    }
+                } catch (ex: SQLException) {
+                    Toast.makeText(this, "Error al mostrar", Toast.LENGTH_SHORT).show()
+                }
+            }
     }
+}
 }
