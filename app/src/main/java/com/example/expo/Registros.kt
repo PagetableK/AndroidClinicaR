@@ -15,16 +15,16 @@ import com.example.expo.ui.registroscompletos.Registroscompletos
 import com.example.expo.ui.theme.ui.theme.ExpoTheme
 
 class Registros : ComponentActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_registros)
-        if (savedInstanceState == null) {
-            supportFragmentManager.beginTransaction()
-                .replace(R.id.container, Registroscompletos.newInstance())
-                .commitNow()
+    //override fun onCreate(savedInstanceState: Bundle?) {
+        //super.onCreate(savedInstanceState)
+       // setContentView(R.layout.activity_registros)
+       // if (savedInstanceState == null) {
+            //supportFragmentManager.beginTransaction()
+                //.replace(R.id.container, Registroscompletos.newInstance())
+               // .commitNow()
 
 
     }
-}
-}
+//}
+//}
 
