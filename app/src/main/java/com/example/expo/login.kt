@@ -65,7 +65,7 @@ class login : AppCompatActivity() {
                             val a2 = RS2.getString("contraseña")
 
                             if (Email==a1 && Contraseña==a2){
-                                Intent
+
                             }
 
                         }
